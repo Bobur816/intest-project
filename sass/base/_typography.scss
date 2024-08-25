@@ -1,0 +1,43 @@
+.text {
+  &_sm {
+    font-size: 0.7rem;
+    color: var(--color-gray);
+  }
+}
+
+.font {
+  &_semibold {
+    font-weight: 600;
+  }
+
+  &_medium {
+    font-weight: 500;
+  }
+
+  &_normal {
+    font-weight: 400;
+  }
+
+  &_light {
+    font-weight: 300;
+  }
+}
+
+.section__title {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    @include absCenterY;
+    height: 240%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiper   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- quick buttons   -->
+    <div class="quick-btns">
+      <button class="quick-btn">
+        <span class="icon">
+          <img src="img/icons/shopcart.svg" alt="quick-icon" />
+        </span>
+      </button>
+      <button class="quick-btn">
+        <span class="icon">
+          <img src="img/icons/phone-white.svg" alt="quick-icon" />
+        </span>
+      </button>
+    </div>
+
+    <!-- dealership  -->
+    <div class="dealership">
+      <div class="dealership__overlay">
+        <div class="dealership__wrapper">
+          <div class="dealership__wrapper-top">
+            <h3>Заявка на диллерство</h3>
+            <p>
+              Заполните форму ниже, станьте нашим диллером и получите ряд
+              преимуществ dsds
+            </p>
+          </div>
+          <form class="dealership__form">
+            <input
+              class="dealership__form-item"
+              type="text"
+              placeholder="Ваше имя*"
+            />
+            <input
+              class="dealership__form-item"
+              type="number"
+              placeholder="Ваш номер телефона*"
+            />
+            <input
+              class="dealership__form-item"
+              type="email"
+              placeholder="E-mail*"
+            />
+            <input
+              class="dealership__form-item"
+              type="text"
+              placeholder="Страна*"
+            />
+            <input
+              class="dealership__form-item"
+              type="text"
+              placeholder="Название компании*"
+            />
+            <textarea
+              class="dealership__form-item"
+              placeholder="Комментарий"
+            ></textarea>
+            <button class="btn_yellow">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER   -->
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top__wrapper">
+            <div class="header__top_left">
+              <div class="header__language">
+                <button>Eт</button>
+                <button>Ру</button>
+                <button>Uz</button>
+              </div>
+              <div class="header__phones">
+                <button class="button-with-img">
+                  <img src="img/icons/phone-yellow.svg" alt="icon" />
+                  <span>+99899 102 99 99</span>
+                  <img src="img/icons/flag-uzb.svg" alt="icon" />
+                </button>
+                <button class="button-with-img">
+                  <img src="img/icons/phone-yellow.svg" alt="icon" />
+                  <span>+99899 102 99 99</span>
+                  <img src="img/icons/flag-kz.svg" alt="icon" />
+                </button>
+                <button class="button-with-img">
+                  <img src="img/icons/phone-yellow.svg" alt="icon" />
+                  <span>+99899 102 99 99</span>
+                  <img src="img/icons/flag-ru.svg" alt="icon" />
+                </button>
+              </div>
+            </div>
+            <div class="header__top_right">
+              <button class="button-with-img">
+                <img src="img/icons/email.svg" alt="email-icon" />
+                info@in-test.uz
+              </button>
+              <ul class="header__nav">
+                <li>
+                  <a class="header__nav-link" href="catalog-products.html"
+                    >Каталог</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav-link" href="#">Дилеры</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="#">Услуги</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="done-works.html">Работы</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="contacts.html">Контакты</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="about.html">О компании</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="container">
+          <div class="header__middle__wrapper">
+            <a class="logo" href="index.html">
+              <img src="img/logos/Logo.svg" alt="Logo" />
+            </a>
+            <div class="search__bar">
+              <input type="text" placeholder="Поиск по сайту" />
+              <button>
+                <img src="img/icons/search-icon.svg" alt="search-icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom__wrapper">
+            <ul class="header__category">
+              <li>
+                <a class="header__category" href="#">Асфальт и битум</a>
+              </li>
+              <li>
+                <a class="header__category" href="#">Бетон</a>
+              </li>
+              <li>
+                <a class="header__category" href="#">Цемент</a>
+              </li>
+              <li>
+                <a class="header__category" href="#">Металл</a>
+              </li>
+              <li>
+                <a class="header__category" href="#">Грунт</a>
+              </li>
+              <li>
+                <a class="header__category" href="#">Общее оборудование</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN   -->
+    <main class="main">
+      <section class="head">
+        <div class="container">
+          <div class="head__wrapper single-work">
+            <div class="location__box">
+              <a href="index.html">Главная</a> /
+              <a href="done-works.html">Выполненные работы</a>/
+              <a href="#">Работа 1</a>
+            </div>
+            <div class="single-work_head-box">
+              <h4>Название проекта</h4>
+              <p>Срана/Город: <span> Узбекистан, Ташкент</span></p>
+              <p>Категория оборудования: <span> Бетон, Цемент, Грунт</span></p>
+              <p>Дата: <span>13 июля 2024 г.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="head__back">
+          <img
+            class="head__bg"
+            src="img/pictures/single-work-head-bg.png"
+            alt="head__bg"
+          />
+        </div>
+      </section>
+
+      <section class="work-info">
+        <div class="container">
+          <div class="work-info__wrapper">
+            <div class="work-info__part part_1">
+              <div class="work-info__part_left part__carousel">
+                <div class="swiper carousel__single-work">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel__item__bg"
+                        src="img/pictures/single__carousel-img-1.png"
+                        alt="single-work-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel__item__bg"
+                        src="img/pictures/single__carousel-img-1.png"
+                        alt="single-work-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="carousel__item__bg"
+                        src="img/pictures/single__carousel-img-1.png"
+                        alt="single-work-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__controls">
+                  <button class="single-prev">
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="33"
+                        height="33"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                      >
+                        <path
+                          d="M19.1187 21.7381L13.8806 16.5L19.1187 11.262"
+                          stroke="inherit"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="single-next">
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.4517 21.7381L18.6897 16.5L13.4517 11.262"
+                          stroke="inherit"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="work-info__part_right part__info">
+                <h3>Превосходство через качество</h3>
+                <p>
+                  Получите полный набор преимуществ, выбирая нас: гарантия
+                  лучшей цены, профессиональная консультация, строгий контроль
+                  качества и надежная помощь в доставке. Мы ценим ваше доверие и
+                  готовы предложить вам идеальное сочетание высокого качества,
+                  удобства и надежности. Обращайтесь к нам и получите
+                  незабываемый опыт с нами!
+                </p>
+                <p>
+                  Получите полный набор преимуществ, выбирая нас: гарантия
+                  лучшей цены, профессиональная консультация, строгий контроль
+                  качества и надежная помощь в доставке. Мы ценим ваше доверие и
+                  готовы предложить вам идеальное сочетание высокого качества,
+                  удобства и надежности. Обращайтесь к нам и получите
+                  незабываемый опыт с нами!
+                </p>
+              </div>
+            </div>
+            <div class="work-info__part part_2">
+              <div class="work-info__part_left part__info">
+                <h3>Превосходство через качество</h3>
+                <p>
+                  Получите полный набор преимуществ, выбирая нас: гарантия
+                  лучшей цены, профессиональная консультация, строгий контроль
+                  качества и надежная помощь в доставке. Мы ценим ваше доверие и
+                  готовы предложить вам идеальное сочетание высокого качества,
+                  удобства и надежности. Обращайтесь к нам и получите
+                  незабываемый опыт с нами!
+                </p>
+                <p>
+                  Получите полный набор преимуществ, выбирая нас: гарантия
+                  лучшей цены, профессиональная консультация, строгий контроль
+                  качества и надежная помощь в доставке. Мы ценим ваше доверие и
+                  готовы предложить вам идеальное сочетание высокого качества,
+                  удобства и надежности. Обращайтесь к нам и получите
+                  незабываемый опыт с нами!
+                </p>
+              </div>
+              <div class="work-info__part_right part__video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/FpO2KImasNo?si=3p9COemm2c3g8H27"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="section__bg"
+          src="img/pictures/section__bg-2.png"
+          alt="bg"
+        />
+      </section>
+
+      <section class="another-works">
+        <div class="container">
+          <h2 class="section__title">
+            <img src="img/icons/text-border.svg" alt="text-border" />
+            Смотрите также наши другие работы
+          </h2>
+
+          <div class="another-works__wrapper">
+            <div class="swiper carousel__another-works">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide work-card">
+                  <img
+                    class="work-card__bg"
+                    src="img/pictures/work-card-img-1.png"
+                    alt="card-img"
+                  />
+                  <div class="work-card__gradient"></div>
+                  <div class="work-card__info">
+                    <span class="with-yellow-dot">24.09.2023</span>
+                    <div class="work-card__info_bottom">
+                      <p>
+                        Название проекта. Аппарат Фрасаа для определения
+                        температуры хрупкости нефтебитумов
+                      </p>
+                      <a href="work-single.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide work-card">
+                  <img
+                    class="work-card__bg"
+                    src="img/pictures/work-card-img-1.png"
+                    alt="card-img"
+                  />
+                  <div class="work-card__gradient"></div>
+                  <div class="work-card__info">
+                    <span class="with-yellow-dot">24.09.2023</span>
+                    <div class="work-card__info_bottom">
+                      <p>
+                        Название проекта. Аппарат Фрасаа для определения
+                        температуры хрупкости нефтебитумов
+                      </p>
+                      <a href="work-single.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide work-card">
+                  <img
+                    class="work-card__bg"
+                    src="img/pictures/work-card-img-1.png"
+                    alt="card-img"
+                  />
+                  <div class="work-card__gradient"></div>
+                  <div class="work-card__info">
+                    <span class="with-yellow-dot">24.09.2023</span>
+                    <div class="work-card__info_bottom">
+                      <p>
+                        Название проекта. Аппарат Фрасаа для определения
+                        температуры хрупкости нефтебитумов
+                      </p>
+                      <a href="work-single.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide work-card">
+                  <img
+                    class="work-card__bg"
+                    src="img/pictures/work-card-img-1.png"
+                    alt="card-img"
+                  />
+                  <div class="work-card__gradient"></div>
+                  <div class="work-card__info">
+                    <span class="with-yellow-dot">24.09.2023</span>
+                    <div class="work-card__info_bottom">
+                      <p>
+                        Название проекта. Аппарат Фрасаа для определения
+                        температуры хрупкости нефтебитумов
+                      </p>
+                      <a href="work-single.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide work-card">
+                  <img
+                    class="work-card__bg"
+                    src="img/pictures/work-card-img-1.png"
+                    alt="card-img"
+                  />
+                  <div class="work-card__gradient"></div>
+                  <div class="work-card__info">
+                    <span class="with-yellow-dot">24.09.2023</span>
+                    <div class="work-card__info_bottom">
+                      <p>
+                        Название проекта. Аппарат Фрасаа для определения
+                        температуры хрупкости нефтебитумов
+                      </p>
+                      <a href="work-single.html">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <button class="another-works-prev">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.1187 21.7381L13.8806 16.5L19.1187 11.262"
+                      stroke="inherit"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="another-works-next">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.4517 21.7381L18.6897 16.5L13.4517 11.262"
+                      stroke="inherit"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 class="section__title">
+          <img src="img/icons/text-border.svg" alt="text-border" />
+          Контакты
+        </h2>
+        <div class="footer__wrapper">
+          <div class="footer__contact">
+            <div class="footer__contact__address">
+              <img
+                class="footer__icon"
+                src="img/icons/location.svg"
+                alt="icon"
+              />
+              <h3 class="footer__title">Адрес</h3>
+              <p class="footer__subtitle">
+                Узбекистан, город Ташкент, Мирабадский район, 17кв
+              </p>
+            </div>
+            <div class="footer__contact__phones">
+              <img
+                class="footer__icon"
+                src="img/icons/phone-yellow-bold.svg"
+                alt="icon"
+              />
+              <h3 class="footer__title">Телефон</h3>
+              <div class="footer__contact__phones-items">
+                <div class="footer__contact__phones-item">
+                  <span class="footer__subtitle">+99899 102 99 99</span>
+                  <img src="img/icons/flag-uzb.svg" alt="flag-img" />
+                </div>
+                <div class="footer__contact__phones-item">
+                  <span class="footer__subtitle">+99899 102 99 99</span>
+                  <img src="img/icons/flag-ru.svg" alt="flag-img" />
+                </div>
+                <div class="footer__contact__phones-item">
+                  <span class="footer__subtitle">+99899 102 99 99</span>
+                  <img src="img/icons/flag-kz.svg" alt="flag-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+            </li>
+          </ul>
+          <form class="feedback-form">
+            <h3 class="footer__title">Форма обратной связи</h3>
+            <div class="number-input">
+              <img src="img/icons/flag-uzb.svg" alt="flag-img" />
+              <input type="text" class="phone-format" placeholder="+998" />
+            </div>
+            <input type="text" placeholder="Как вас зовут?" />
+            <button class="btn_yellow">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <span>2024 © IN TEST</span>
+          <span>Политика конфиденциальности</span>
+          <div>
+            <span>Разработано в </span>
+            <img src="img/icons/novas.svg" alt="novas" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"
+      integrity="sha512-F5Ul1uuyFlGnIT1dk2c4kB4DBdi5wnBJjVhL7gQlGh46Xn0VhvD8kgxLtjdZ5YN83gybk/aASUAlpdoWUjRR3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/carousels.js"></script>
+    <script src="js/carousels-inside.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

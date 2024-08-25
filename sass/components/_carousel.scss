@@ -1,0 +1,72 @@
+.carousel {
+  &__head {
+    // background-color: rgba(255, 0, 0, 0.466);
+
+    .swiper-pagination {
+      color: var(--color-white);
+    }
+  }
+
+  &__partners {
+    margin-top: 3.5rem;
+    height: 8.5rem;
+  }
+
+  &__completed {
+    height: 100%;
+    position: relative;
+  }
+
+  &__similar {
+    margin-top: 3.1rem;
+  }
+
+  &__single-work {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__another-works {
+    height: 18rem;
+    // background-color: yellow;
+  }
+
+  &__item__bg {
+    @include fullImg;
+    @include absCenter;
+  }
+
+  &__controls {
+    // width: 200px;
+    // height: 50px;
+    // background-color: red;
+    position: absolute;
+    @include spaced;
+    gap: 1.2rem;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+    button {
+      height: 2.8rem;
+      width: 2.8rem;
+      // box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+      border: 0.05rem solid var(--color-bg);
+
+      .icon {
+        stroke: #111111;
+        height: 1.65rem;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        background-color: var(--color-yellow);
+
+        .icon {
+          stroke: var(--color-white);
+        }
+      }
+    }
+  }
+}

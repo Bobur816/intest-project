@@ -1,0 +1,10 @@
+.works {
+  margin: 2.25rem 0 4.25rem 0;
+  //   position: relative;
+  &__wrapper {
+    margin-top: 3.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.1rem;
+  }
+}

@@ -1,0 +1,197 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: var(--color-gray);
+  z-index: 20;
+  &__top {
+    background-color: #fafafa;
+
+    &__wrapper {
+      height: 2.5rem;
+      @include spaced;
+      transition: all 0.3s;
+    }
+
+    &_left {
+      @include spaced;
+      height: 100%;
+      gap: 2rem;
+    }
+
+    &_right {
+      @include spaced;
+
+      button {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__middle {
+    background-color: var(--color-white);
+    &__wrapper {
+      height: 3.8rem;
+      @include spaced;
+      padding: 0.25rem 0;
+      transition: all 0.3s;
+
+      .logo {
+        height: 100%;
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    background-image: url("../../img/pictures/header-bottom-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 0.3s;
+    &__wrapper {
+      height: 2.55rem;
+      color: var(--color-white);
+      transition: all 0.3s;
+    }
+  }
+
+  &__language {
+    button {
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 100%;
+      color: var(--color-gray);
+      height: 0.55rem;
+
+      &:first-child {
+        padding-right: 0.5rem;
+      }
+
+      &:not(:first-child) {
+        padding: 0 0.5rem;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  &__phones {
+    // background-color: blue;
+    @include spaced;
+    gap: 1.25rem;
+    height: 100%;
+  }
+
+  &__nav {
+    @include spaced;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 100%;
+
+    li {
+      &:not(:last-child) a {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &-link {
+      display: inline-block;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__category {
+    height: 100%;
+    @include center;
+    gap: 4rem;
+
+    &-item {
+      color: var(--color-white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  .button-with-img {
+    height: 100%;
+    @include spaced;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 100%;
+    span {
+      line-height: 100%;
+    }
+
+    img {
+      max-height: 90%;
+      width: 1.2rem;
+    }
+  }
+
+  .search__bar {
+    height: 2rem;
+    @include spaced;
+    gap: 2px;
+
+    input {
+      height: 100%;
+      border: 0.05rem solid #ccc;
+      outline: none;
+      width: 18.7rem;
+
+      font-size: 0.7rem;
+      font-weight: 300;
+      line-height: 100%;
+      background-color: #fafafa;
+      padding: 0.55rem;
+
+      &::placeholder {
+        color: #9b9b9b;
+      }
+    }
+
+    button {
+      height: 100%;
+      aspect-ratio: 1/1;
+      background-color: var(--color-primary);
+      img {
+        width: 1.2rem;
+      }
+    }
+  }
+
+  &.header__scrolled {
+    .header__top {
+      &__wrapper {
+        height: 1.8rem;
+      }
+
+      &_right {
+        @include spaced;
+
+        button {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .header__middle {
+      &__wrapper {
+        height: 2.5rem;
+      }
+    }
+
+    .header__bottom {
+      &__wrapper {
+        height: 2rem;
+      }
+    }
+  }
+}

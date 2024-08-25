@@ -1,0 +1,67 @@
+.contacts {
+  //   background-color: red;
+  padding: 2.25rem 0;
+
+  &__wrapper {
+    margin-top: 2.5rem;
+    // background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  &__card {
+    background-color: var(--color-white);
+    height: 21.3rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    box-shadow: 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.05),
+      0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04),
+      0px 20px 13px 0px rgba(0, 0, 0, 0.04),
+      0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03),
+      0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+
+    @include spaced;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__part {
+      &-title {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+
+        h4 {
+          color: var(--color-primary);
+          font-size: 0.9rem;
+          font-weight: 500;
+          line-height: 170%; /* 30.6px */
+        }
+
+        img {
+          height: 0.8rem;
+        }
+      }
+
+      &-subtitle {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.4rem;
+        margin-top: 0.5rem;
+
+        img {
+          height: 1.2rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 145%; /* 23.2px */
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.card {
+  //   background-color: red;
+  height: 19.1rem;
+  width: 14.3rem;
+  background-color: var(--color-white);
+  @include spaced;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.05),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.04),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03),
+    0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+
+  &__img {
+    // background-color: blue;
+    height: 12rem;
+    width: 100%;
+    @include center;
+
+    img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+  }
+
+  &__info {
+    padding: 0.2rem 0.55rem 0 1.3rem;
+    color: #111;
+
+    p {
+      font-size: 0.7rem;
+      font-weight: 400;
+      margin: 0.65rem 0;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span {
+      font-size: 0.55rem;
+      font-weight: 300;
+      line-height: 100%;
+      position: relative;
+      padding-left: 0.6rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 0.25rem;
+        width: 0.25rem;
+        border-radius: 50%;
+        background-color: var(--color-yellow);
+        @include absCenterY;
+        left: 0;
+      }
+    }
+  }
+
+  &__btns {
+    width: 100%;
+    // background-color: blue;
+    height: 2rem;
+    @include spaced;
+    transition: all 0.3s;
+    border-top: 1px solid rgba(209, 209, 209, 0.45);
+
+    .icon {
+      transition: all 0.3s;
+      stroke: var(--color-primary);
+    }
+    & > span {
+      width: 50%;
+      height: 100%;
+      @include center;
+      gap: 0.6rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 100%;
+      position: relative;
+      z-index: 2;
+      color: var(--color-primary);
+
+      &:after {
+        content: "";
+        position: absolute;
+        @include fullImg;
+        background-image: url("../../img/pictures/btn-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+    }
+
+    a {
+      width: 50%;
+      height: 100%;
+      color: var(--color-primary);
+      @include center;
+      gap: 0.5rem;
+      font-size: 0.6rem;
+      font-weight: 400;
+      line-height: 100%;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 2;
+
+      &:after {
+        content: "";
+        position: absolute;
+        @include fullImg;
+        background-color: var(--color-yellow);
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &:hover {
+    .card__btns {
+      & > span {
+        color: var(--color-white);
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: var(--color-white);
+        &::after {
+          opacity: 1;
+        }
+
+        .icon {
+          stroke: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &__cart-btn {
+    position: absolute;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 0.15rem solid var(--color-yellow);
+    border-radius: 50%;
+    right: 0.6rem;
+    top: 0.6rem;
+    background-color: var(--color-white);
+    @include center;
+    .icon {
+      height: 0.8rem;
+      width: 0.8rem;
+    }
+
+    &.active {
+      background-color: var(--color-primary);
+      svg {
+        fill: var(--color-white);
+      }
+    }
+  }
+}

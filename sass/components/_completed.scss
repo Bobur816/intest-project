@@ -1,0 +1,109 @@
+.completed {
+  position: relative;
+  &__item {
+    height: 100%;
+
+    &__wrapper {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 44rem 1fr;
+      gap: 2.8rem;
+      position: relative;
+    }
+
+    &-left {
+      width: 44rem;
+      height: 100%;
+      position: relative;
+
+      .swiper {
+        height: 100%;
+        // width: 44rem;
+      }
+
+      &__carousel-control {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        padding: 1rem 0;
+        @include center;
+        gap: 0.9rem;
+        z-index: 2;
+        color: var(--color-white);
+
+        button {
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+
+      &__carousel-num {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 100%;
+
+        .current {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-right {
+      @include spaced;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &_top {
+        h3 {
+          color: var(--color-primary);
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 100%;
+        }
+
+        p {
+          color: #292929;
+          font-family: Montserrat;
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 170%; /* 25.5px */
+          margin-top: 1.25rem;
+        }
+      }
+
+      button {
+        color: var(--color-white);
+        font-feature-settings: "liga" off, "clig" off;
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 0.8rem; /* 114.286% */
+        padding: 1rem 3.5rem;
+      }
+    }
+
+    &__position {
+      position: absolute;
+      background-color: red;
+      z-index: 1;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.7rem;
+      font-weight: 400;
+      line-height: 100%;
+      height: 1.75rem;
+      width: 7.5rem;
+      @include center;
+      color: var(--color-white);
+      background-color: var(--color-yellow);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    height: 80%;
+    top: 0;
+    right: 0;
+  }
+}

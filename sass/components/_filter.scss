@@ -1,0 +1,108 @@
+.filter {
+  background-color: #f3f3f6;
+  padding: 0.8rem;
+  height: fit-content;
+  max-height: 81.4rem;
+  border-radius: 0.6rem;
+  overflow-Y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__title {
+    color: hsl(235, 61%, 11%);
+    font-weight: 400;
+    letter-spacing: -0.198px;
+  }
+
+  &__wrapper {
+    margin-top: 0.75rem;
+    border-top: 1px solid #d6d7dc;
+  }
+
+  &__item {
+    margin-top: 1rem;
+    &__toggler {
+      height: 1rem;
+      width: 100%;
+      color: #1f2633;
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 1rem; /* 142.857% */
+      letter-spacing: 0.0035rem;
+      @include spaced;
+
+      img {
+        transition: all 0.3s;
+        height: 100%;
+      }
+    }
+
+    &__body {
+      //   background-color: red;
+      display: none;
+      ul {
+        margin-top: 0.6rem;
+        @include spaced;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+
+      li {
+      }
+
+      label {
+        @include center;
+        gap: 0.4rem;
+        color: #76788a;
+        font-size: 0.7rem;
+        font-weight: 400;
+        line-height: 1rem; /* 142.857% */
+        letter-spacing: 0.0035rem;
+      }
+
+      input {
+        appearance: none;
+        width: 0.8rem;
+        height: 0.8rem;
+        border: 0.05rem solid #d6d7dc;
+        border-radius: 0.2rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          height: 0.4rem;
+          width: 0.25rem;
+          //   background-color: red;
+          @include absCenter;
+          position: absolute;
+          transform: translate(-50%, -65%) rotate(45deg);
+          border-right: 0.08rem solid var(--color-white);
+          border-bottom: 0.08rem solid var(--color-white);
+          display: none;
+        }
+
+        &:checked {
+          background-color: var(--color-primary);
+        }
+
+        &:checked::before {
+          display: block;
+        }
+      }
+    }
+
+    &.active {
+      .filter__item__body {
+        display: block;
+      }
+      .filter__item__toggler {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

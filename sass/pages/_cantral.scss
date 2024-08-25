@@ -1,0 +1,18 @@
+.location {
+  padding: 1rem 0;
+  position: relative;
+  &__box {
+    color: #585960;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.18px;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    a:hover {
+      color: var(--color-primary);
+    }
+  }
+}

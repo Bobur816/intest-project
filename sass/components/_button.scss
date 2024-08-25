@@ -1,0 +1,37 @@
+.btn {
+  font-family: "Euclid Square";
+
+  &_primary {
+    // background: linear-gradient(
+    //     282deg,
+    //     rgba(0, 26, 113, 0) 56.23%,
+    //     #001a71 82.38%
+    //   ),
+    //   url("../../img/pictures/btn-bg.png") lightgray 61.031px -58.592px / 148.116%
+    //     375.274% no-repeat,
+    //   #001a71;
+
+    background-image: url("../../img/pictures/btn-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  &_secondary {
+    background-color: var(--color-gray);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  &_yellow {
+    background-color: var(--color-yellow);
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}
