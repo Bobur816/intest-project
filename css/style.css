@@ -1141,6 +1141,129 @@ body {
   transform: translate(-50%, 0);
 }
 
+.map {
+  margin: 5.7rem 0 4rem 0;
+  overflow: hidden;
+}
+.map__wrapper {
+  margin-top: 2.4rem;
+  height: 48.4rem;
+  position: relative;
+}
+.map__main {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.map__main__svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.map__main__svg:nth-child(1) {
+  z-index: 2;
+}
+.map__main__svg:nth-child(2) {
+  z-index: 1;
+}
+.map__main__svg:nth-child(3) {
+  z-index: 3;
+  pointer-events: none;
+}
+.map__main__svg .stroke-hide {
+  transition: all 1s;
+  fill: none;
+  stroke: #8291c4;
+  stroke-width: 1;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+}
+.map__main__svg .stroke-hide.active {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+.map__main__svg .clickable {
+  stroke: #fff;
+  transition: all 0.3s;
+}
+.map__main__svg .clickable.active {
+  fill: #001a71;
+}
+.map__main__svg .clickable:hover {
+  fill: #001a71;
+}
+.map__card {
+  position: absolute;
+  top: 5.75rem;
+  width: 26.55rem;
+  height: 31.65rem;
+  background: rgba(238, 238, 238, 0.2);
+  box-shadow: 7px 13px 14px 0px rgba(0, 0, 0, 0.25), 31px 33px 30px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5.5px);
+  z-index: 5;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.map__card__img {
+  width: 100%;
+  height: 14.75rem;
+  object-fit: cover;
+}
+.map__card__info {
+  padding: 0.7rem 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.map__card__info__head {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 149.8%; /* 55.426px */
+}
+.map__card__info .statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.map__card__info .statistics__item {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.map__card__info .statistics__item p {
+  text-align: center;
+  color: #2f2f2f;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem; /* 125% */
+}
+.map__card__info h4 {
+  font-size: 2.35rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.map__card__info button {
+  height: 3.25rem;
+  width: 12.75rem;
+  font-family: "Euclid Square";
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2rem; /* 150% */
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1895,10 +2018,13 @@ body {
   height: 15.3rem;
 }
 .product__addition .card__info p {
-  font-size: 13px;
+  font-size: 0.65rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.product__addition .card__btns svg {
+  height: 0.7rem;
 }
 .product__info_name {
   color: var(--color-primary);

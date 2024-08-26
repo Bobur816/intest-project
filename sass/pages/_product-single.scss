@@ -71,10 +71,16 @@
 
       &__info {
         p {
-          font-size: 13px;
+          font-size: 0.65rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+        }
+      }
+
+      &__btns {
+        svg {
+          height: 0.7rem;
         }
       }
     }

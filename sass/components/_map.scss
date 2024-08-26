@@ -1,0 +1,144 @@
+.map {
+  margin: 5.7rem 0 4rem 0;
+  overflow: hidden;
+
+  &__wrapper {
+    margin-top: 2.4rem;
+    height: 48.4rem;
+    // background-color: rgba(255, 0, 0, 0.219);
+    position: relative;
+  }
+
+  &__main {
+    position: absolute;
+    // background-color: yellow;
+    width: 100vw;
+    height: 100%;
+    @include absCenter;
+
+    &__svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include absCenter;
+
+      &:nth-child(1) {
+        z-index: 2;
+      }
+      &:nth-child(2) {
+        z-index: 1;
+      }
+      &:nth-child(3) {
+        // background-color: yellow;
+        z-index: 3;
+        pointer-events: none;
+      }
+
+      .stroke-hide {
+        // opacity: 0;
+        // transition: all 0.5s;
+
+        transition: all 1s;
+        fill: none;
+        stroke: #8291c4;
+        stroke-width: 1;
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        &.active {
+          //   opacity: 1;
+          stroke-dasharray: 0;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .clickable {
+        stroke: #fff;
+        transition: all 0.3s;
+        // fill-opacity: 0.1;
+        // opacity: 0.1;
+        // fill: rgba(255, 0, 0, 0.192);
+
+        &.active {
+          fill: #001a71;
+        }
+
+        &:hover {
+          fill: #001a71;
+          //   fill: #001a7193;
+        }
+      }
+    }
+  }
+
+  &__card {
+    position: absolute;
+    top: 5.75rem;
+    width: 26.55rem;
+    height: 31.65rem;
+    background: rgba(238, 238, 238, 0.2);
+
+    box-shadow: 7px 13px 14px 0px rgba(0, 0, 0, 0.25),
+      31px 33px 30px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5.5px);
+    z-index: 5;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &__img {
+      width: 100%;
+      height: 14.75rem;
+      object-fit: cover;
+    }
+
+    &__info {
+      padding: 0.7rem 1rem 1.5rem;
+      @include spaced;
+      flex-direction: column;
+
+      &__head {
+        font-size: 1.85rem;
+        font-weight: 700;
+        line-height: 149.8%; /* 55.426px */
+      }
+
+      .statistics {
+        // background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        &__item {
+          //   background-color: yellow;
+          width: fit-content;
+          @include spaced;
+          flex-direction: column;
+          gap: 0.55rem;
+
+          p {
+            text-align: center;
+            color: #2f2f2f;
+            font-family: Montserrat;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: 1rem; /* 125% */
+          }
+        }
+      }
+
+      h4 {
+        font-size: 2.35rem;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      button {
+        height: 3.25rem;
+        width: 12.75rem;
+        font-family: "Euclid Square";
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.2rem; /* 150% */
+      }
+    }
+  }
+}
