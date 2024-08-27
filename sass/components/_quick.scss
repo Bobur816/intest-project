@@ -27,3 +27,12 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .quick {
+    &-btns {
+      right: 0.4rem;
+      bottom: 10rem;
+    }
+  }
+}

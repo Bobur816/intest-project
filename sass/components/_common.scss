@@ -70,3 +70,59 @@
     max-height: 80vh;
   }
 }
+
+.cards-show__more-btn{
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 0.8rem;
+  color: var(--color-white);
+  margin: 0 auto;
+}
+
+.show-more__wrapper{
+  text-align: center;
+  margin-top: 2.5rem;
+  display: none;
+}
+
+.search__bar {
+  height: 2rem;
+  @include spaced;
+  gap: 2px;
+
+  input {
+    height: 100%;
+    border: 0.05rem solid #ccc;
+    outline: none;
+    width: 18.7rem;
+
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 100%;
+    background-color: #fafafa;
+    padding: 0.55rem;
+
+    &::placeholder {
+      color: #9b9b9b;
+    }
+  }
+
+  button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--color-primary);
+    img {
+      width: 1.2rem;
+    }
+  }
+}
+
+@media(max-width:768px){
+  .main {
+    margin-top: 5rem;
+  }
+
+  .show-more__wrapper{
+    display: block;
+  }
+}

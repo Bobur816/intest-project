@@ -1,0 +1,103 @@
+.mobile-nav {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  @include fullImg;
+
+  background-color: var(--color-white);
+  padding: 1.25rem 0;
+  display: none;
+
+  @media (min-width: 768px) {
+    visibility: hidden;
+  }
+
+  &__top {
+    // background-color: red;
+    height: 5rem;
+    width: 100%;
+    padding: 0 1rem;
+
+    @include spaced;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &__bottom {
+    padding: 1.5rem 1rem;
+
+    .header__phones {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0.5rem;
+      row-gap: 1rem;
+      padding: 0;
+      margin: 0;
+      margin-top: 1.5rem;
+      button {
+        justify-content: flex-start;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__close {
+    background-color: var(--color-primary);
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .search__bar {
+    // background-color: yellow;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: 2rem;
+    input {
+      width: 100%;
+    }
+  }
+
+  &__main {
+    padding: 1rem 0;
+  }
+
+  &__links {
+    padding: 1.5rem 1rem;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+    a {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 100%;
+      color: #58585a;
+
+      &.active {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__categories {
+    display: grid;
+    margin-bottom: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+
+    a {
+      color: #58585a;
+      font-size: 1rem;
+    }
+  }
+}

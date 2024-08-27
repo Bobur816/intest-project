@@ -40,20 +40,25 @@ $(window).on("load", () => {
   const partners = new Swiper(".carousel__partners", {
     // Optional parameters
     loop: true,
-    spaceBetween: 30,
 
     breakpoints: {
       "@0.00": {
-        slidesPerView: 1,
+        slidesPerView: 2.5,
+        spaceBetween: 10,
       },
-      "@0.75": {
-        slidesPerView: 2,
-      },
-      "@1.00": {
+
+      "@0.50": {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
-      "@1.50": {
-        slidesPerView: 4.5,
+
+      "@0.75": {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      "@1": {
+        slidesPerView: 5,
+        spaceBetween: 20,
       },
     },
   });
@@ -160,6 +165,33 @@ $(window).on("load", () => {
       "@0.00": {
         slidesPerView: 1,
       },
+      "@0.75": {
+        slidesPerView: 2,
+      },
+      "@1.00": {
+        slidesPerView: 3,
+      },
+      "@1.50": {
+        slidesPerView: 4,
+      },
+    },
+  });
+
+  const newsProducts = new Swiper(".carousel__new-products", {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: ".new-products-next",
+      prevEl: ".new-products-prev",
+    },
+
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 1.5,
+      },
+
       "@0.75": {
         slidesPerView: 2,
       },

@@ -1,7 +1,7 @@
 .card {
   //   background-color: red;
   height: 19.1rem;
-  width: 14.3rem;
+  // width: 14.3rem;
   background-color: var(--color-white);
   @include spaced;
   flex-direction: column;
@@ -11,6 +11,8 @@
     0px 20px 13px 0px rgba(0, 0, 0, 0.04),
     0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.03),
     0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+
+    
 
   &__img {
     // background-color: blue;
@@ -61,7 +63,6 @@
 
   &__btns {
     width: 100%;
-    // background-color: blue;
     height: 2rem;
     @include spaced;
     transition: all 0.3s;
@@ -164,6 +165,44 @@
       svg {
         fill: var(--color-white);
       }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .card {
+    min-height: 15rem;
+    height: fit-content;
+  
+    &__info {
+      padding: 0.1rem 0.55rem 0 0.5rem;
+  
+      p {
+        font-size: 0.58rem;
+      }
+    }
+  
+    &__categories {
+      span {
+        font-size: 0.4rem;
+      }
+    }
+  
+    &__btns {
+      & > span {
+        font-size: 0.58rem;
+      }
+  
+      a {
+        padding: 0 0.1rem;
+        gap: 0.4rem;
+        font-size: 0.48rem;
+      }
+    }
+  
+    &__cart-btn {
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 }

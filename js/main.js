@@ -29,6 +29,15 @@ $(window).on("load", () => {
 
   // ______________________________.filter__item__toggler________________________________
 
+  $(".mobile-nav__open").on("click", function () {
+    $(".mobile-nav").slideDown(400);
+  });
+  $(".mobile-nav__close").on("click", function () {
+    $(".mobile-nav").slideUp(400);
+  });
+
+  // ______________________________.filter__item__toggler________________________________
+
   $(".filter__item__toggler").on("click", function (e) {
     if ($(this).parent().hasClass("active")) {
       $(this).parents(".filter__item").find(".filter__item__body").slideUp(400);
@@ -63,13 +72,13 @@ $(window).on("load", () => {
     $(".dealership").fadeIn(300);
   });
 
-  $(".dealership").click((e) => {
-    let div = $(".dealership__wrapper");
+  $(".modal").click((e) => {
+    let div = $(".modal__wrapper");
     if (!div.is(e.target) && div.has(e.target).length === 0) {
-      $(".dealership").fadeOut(400);
+      $(".modal").fadeOut(400);
 
       setTimeout(() => {
-        $(".dealership__form-item").val("");
+        $(".modal__form-item").val("");
       }, 700);
     }
   });
@@ -103,6 +112,13 @@ $(window).on("load", () => {
   // ______________________________cart__btn_________________________________
   $(".card__cart-btn").on("click", function () {
     $(this).toggleClass("active");
+  });
+
+  // ______________________________cards-show__more-btn_________________________________
+
+  $(".cards-show__more-btn").on("click", function () {
+    $(this).parent().hide();
+    $(this).parent().parent().find(".for__more").show();
   });
 
   // ______________________________phone-format_________________________________

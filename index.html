@@ -36,48 +36,130 @@
     </div>
 
     <!-- dealership  -->
-    <div class="dealership">
-      <div class="dealership__overlay">
-        <div class="dealership__wrapper">
-          <div class="dealership__wrapper-top">
+    <div class="modal dealership">
+      <div class="modal__overlay">
+        <div class="modal__wrapper">
+          <div class="modal__wrapper-top">
             <h3>Заявка на диллерство</h3>
             <p>
               Заполните форму ниже, станьте нашим диллером и получите ряд
               преимуществ dsds
             </p>
           </div>
-          <form class="dealership__form">
+          <form class="modal__form">
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="text"
               placeholder="Ваше имя*"
             />
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="number"
               placeholder="Ваш номер телефона*"
             />
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="email"
               placeholder="E-mail*"
             />
+            <input class="modal__form-item" type="text" placeholder="Страна*" />
             <input
-              class="dealership__form-item"
-              type="text"
-              placeholder="Страна*"
-            />
-            <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="text"
               placeholder="Название компании*"
             />
             <textarea
-              class="dealership__form-item"
+              class="modal__form-item"
               placeholder="Комментарий"
             ></textarea>
             <button class="btn_yellow">Отправить</button>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav  -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__top">
+        <a class="mobile-nav__logo" href="#">
+          <img src="img/logos/Logo.svg" alt="logo-mobile" />
+        </a>
+        <button class="mobile-nav__close">
+          <img src="img/icons/close-img.svg" alt="close-img" />
+        </button>
+      </div>
+
+      <div class="mobile-nav__main">
+        <div class="search__bar">
+          <input type="text" placeholder="Поиск по сайту" />
+          <button>
+            <img src="img/icons/search-icon.svg" alt="search-icon" />
+          </button>
+        </div>
+        <ul class="mobile-nav__links">
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="done-works.html">Работы</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+          <li>
+            <a href="about.html">О компании</a>
+          </li>
+        </ul>
+        <div class="mobile-nav__bottom">
+          <ul class="mobile-nav__categories">
+            <li>
+              <a href="#">Асфальт и битум</a>
+            </li>
+            <li>
+              <a href="#">Металл</a>
+            </li>
+            <li>
+              <a href="#">Бетон</a>
+            </li>
+            <li>
+              <a href="#">Грунт</a>
+            </li>
+            <li>
+              <a href="#">Цемент</a>
+            </li>
+            <li>
+              <a href="#">Общее оборудование</a>
+            </li>
+          </ul>
+          <div class="header__language">
+            <button>Eт</button>
+            <button>Ру</button>
+            <button>Uz</button>
+          </div>
+          <div class="header__phones">
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-uzb.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-kz.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-ru.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/email.svg" alt="email-icon" />
+              info@in-test.uz
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -148,10 +230,14 @@
             <a class="logo" href="#">
               <img src="img/logos/Logo.svg" alt="Logo" />
             </a>
+
             <div class="search__bar">
               <input type="text" placeholder="Поиск по сайту" />
               <button>
                 <img src="img/icons/search-icon.svg" alt="search-icon" />
+              </button>
+              <button class="mobile-nav__open mobile-nav-toggler">
+                <img src="img/icons/hamburger.svg" alt="hamburger-icon" />
               </button>
             </div>
           </div>
@@ -317,707 +403,714 @@
             <img src="img/icons/text-border.svg" alt="text-border" />
             Новинки
           </h2>
+          <div class="new-items__wrapper">
+            <div class="cards">
+              <div class="card">
+                <button class="card__cart-btn active">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn active">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-3.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-4.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
 
-          <div class="cards">
-            <div class="card">
-              <button class="card__cart-btn active">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
+              <div class="card for__more">
+                <button class="card__cart-btn active">
                   <span class="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
                     >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </span>
-                </a>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn active">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-3.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-4.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <button class="card__cart-btn active">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
+            <div class="show-more__wrapper">
+              <button class="cards-show__more-btn btn_yellow">
+                Показать ещё
               </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-3.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-4.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-3.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-4.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -1029,1092 +1122,1099 @@
             <img src="img/icons/text-border.svg" alt="text-border" />
             Популярные товары
           </h2>
-          <div class="cards">
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
+          <div class="popular-products__wrapper">
+            <div class="cards">
+              <div class="card">
+                <button class="card__cart-btn">
                   <span class="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
                     >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </span>
-                </a>
+                </button>
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-3.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-4.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-3.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-4.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-2.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-3.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-4.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="card for__more">
+                <button class="card__cart-btn">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="#001A71"
+                    >
+                      <g clip-path="url(#clip0_442_8131)">
+                        <path
+                          d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
+                          fill="inherit"
+                        />
+                        <path
+                          d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
+                          fill="inherit"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_442_8131">
+                          <rect
+                            width="12.4377"
+                            height="12.4377"
+                            fill="white"
+                            transform="translate(0.416016 0.86792)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </button>
+                <div class="card__img">
+                  <img src="img/pictures/card-item-img-1.png" alt="card-img" />
+                </div>
+                <div class="card__info">
+                  <div class="card__categories">
+                    <span>Цемент</span>
+                    <span>Бетон</span>
+                    <span>Асфальт</span>
+                  </div>
+                  <p>Пресс для испытаний цемента на сжатие и изгиб</p>
+                </div>
+                <div class="card__btns">
+                  <span>4 500 $</span>
+                  <a href="product-single.html">
+                    Подробнее
+                    <span class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        stroke="#001A71"
+                      >
+                        <path
+                          d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
+                          stroke="inherit"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
+            <div class="show-more__wrapper">
+              <button class="cards-show__more-btn btn_yellow">
+                Показать ещё
               </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-3.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-4.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-3.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-4.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-2.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-3.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-4.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="card">
-              <button class="card__cart-btn">
-                <span class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="14"
-                    viewBox="0 0 13 14"
-                    fill="#001A71"
-                  >
-                    <g clip-path="url(#clip0_442_8131)">
-                      <path
-                        d="M3.38133 13.0459C3.92201 13.0459 4.36031 12.6076 4.36031 12.0669C4.36031 11.5262 3.92201 11.0879 3.38133 11.0879C2.84065 11.0879 2.40234 11.5262 2.40234 12.0669C2.40234 12.6076 2.84065 13.0459 3.38133 13.0459Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M8.46922 13.0456C9.0099 13.0456 9.4482 12.6073 9.4482 12.0666C9.4482 11.526 9.0099 11.0876 8.46922 11.0876C7.92854 11.0876 7.49023 11.526 7.49023 12.0666C7.49023 12.6073 7.92854 13.0456 8.46922 13.0456Z"
-                        fill="inherit"
-                      />
-                      <path
-                        d="M12.2996 1.12781H10.9635C10.7376 1.12781 10.5554 1.31 10.5554 1.53592C10.5554 1.63066 10.5894 1.71811 10.6453 1.78856L10.2712 3.15136H0.561523L2.24013 8.56371H8.78693L8.42254 9.89494H1.84173C1.58423 9.89494 1.37775 10.1039 1.37775 10.3589V10.8934H10.2785V10.3589C10.2785 10.1014 10.0696 9.89494 9.8145 9.89494H9.1829L11.3644 1.94403H12.302C12.528 1.94403 12.7102 1.76184 12.7102 1.53592C12.7077 1.31 12.5255 1.12781 12.2996 1.12781Z"
-                        fill="inherit"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_442_8131">
-                        <rect
-                          width="12.4377"
-                          height="12.4377"
-                          fill="white"
-                          transform="translate(0.416016 0.86792)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-              </button>
-              <div class="card__img">
-                <img src="img/pictures/card-item-img-1.png" alt="card-img" />
-              </div>
-              <div class="card__info">
-                <div class="card__categories">
-                  <span>Цемент</span>
-                  <span>Бетон</span>
-                  <span>Асфальт</span>
-                </div>
-                <p>Пресс для испытаний цемента на сжатие и изгиб</p>
-              </div>
-              <div class="card__btns">
-                <span>4 500 $</span>
-                <a href="product-single.html">
-                  Подробнее
-                  <span class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="8"
-                      viewBox="0 0 14 8"
-                      fill="none"
-                      stroke="#001A71"
-                    >
-                      <path
-                        d="M12.9688 4.375L9.66875 1.1875M12.9688 4.375L9.66875 7.5625M12.9688 4.375H0.218749"
-                        stroke="inherit"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -2222,6 +2322,18 @@
               />
             </a>
             <a href="#" class="services__item">
+              <h3>Сервисное обслуживание</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+              <img
+                class="services__item__bg"
+                src="img/pictures/services__item-img-4.png"
+                alt="services-img"
+              />
+            </a>
+            <a href="#" class="services__item">
               <h3>Доставка оборудования</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -2231,18 +2343,6 @@
               <img
                 class="services__item__bg"
                 src="img/pictures/services__item-img-3.png"
-                alt="services-img"
-              />
-            </a>
-            <a href="#" class="services__item">
-              <h3>Сервисное обслуживание</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
-              </p>
-              <img
-                class="services__item__bg"
-                src="img/pictures/services__item-img-4.png"
                 alt="services-img"
               />
             </a>
@@ -2532,11 +2632,7 @@
             </div>
           </div>
         </div>
-        <img
-          class="completed__bg"
-          src="img/pictures/completed-bg.png"
-          alt="bg"
-        />
+        <img class="section__bg" src="img/pictures/completed-bg.png" alt="bg" />
       </section>
     </main>
 
@@ -2634,5 +2730,6 @@
     <script src="js/carousels.js"></script>
     <script src="js/carousels-inside.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script src="js/class-toggler.js"></script> -->
   </body>
 </html>
