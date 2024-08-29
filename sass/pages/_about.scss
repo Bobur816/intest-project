@@ -1,19 +1,12 @@
 .about {
   &_head-box {
-    // background-color: red;
-    // width: 100%;
     align-self: center;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     padding: 1.25rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
-
-    &__item {
-      //   background-color: yellow;
-    }
 
     h3 {
       font-size: 1rem;
@@ -73,6 +66,7 @@
     img {
       height: 18.5rem;
       width: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -85,6 +79,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1.15rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
@@ -100,6 +101,11 @@
     @include absCenter;
     z-index: -1;
     transition: all 0.3s;
+    overflow: hidden;
+    img {
+      @include fullImg;
+      object-fit: cover;
+    }
   }
   &__info {
     padding: 1rem 1.25rem;
@@ -124,6 +130,60 @@
   }
 
   &:hover &__img {
-    transform: translate(-50%, -50%) scale(1.02);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &_head-box {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+
+  .about-main {
+    .section__bg {
+      max-width: 100%;
+    }
+    &_top {
+      h2 {
+        font-size: 2.05rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        max-width: 100%;
+      }
+    }
+
+    &_bottom {
+      grid-template-columns: 1fr;
+
+      img {
+        height: 20rem;
+      }
+    }
+  }
+
+  .employees {
+    margin: 4.5rem 0 2rem 0;
+  }
+
+  //  for card
+
+  .employee-card {
+    height: 12rem;
+
+    &__info {
+      padding: 0.75rem;
+      h3 {
+        font-size: 0.95rem;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
   }
 }

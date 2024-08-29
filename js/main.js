@@ -27,13 +27,22 @@ $(window).on("load", () => {
     }
   });
 
-  // ______________________________.filter__item__toggler________________________________
+  // ______________________________.mobile__toggler________________________________
 
   $(".mobile-nav__open").on("click", function () {
     $(".mobile-nav").slideDown(400);
   });
   $(".mobile-nav__close").on("click", function () {
     $(".mobile-nav").slideUp(400);
+  });
+
+  // ______________________________.mobile__toggler________________________________
+
+  $(".mobile-filter__open").on("click", function () {
+    $(".mobile-filter").slideDown(400);
+  });
+  $(".mobile-filter__close").on("click", function () {
+    $(".mobile-filter").slideUp(400);
   });
 
   // ______________________________.filter__item__toggler________________________________
@@ -72,6 +81,15 @@ $(window).on("load", () => {
     $(".dealership").fadeIn(300);
   });
 
+  // ______________________________order-form_________________________________
+  $(".order-form__open").on("click", function () {
+    $(".order-form").fadeIn(300);
+  });
+
+  $(".order-form__close").on("click", function () {
+    $(".order-form").fadeIn(300);
+  });
+
   $(".modal").click((e) => {
     let div = $(".modal__wrapper");
     if (!div.is(e.target) && div.has(e.target).length === 0) {
@@ -93,7 +111,7 @@ $(window).on("load", () => {
   });
 
   $(".installments").click((e) => {
-    let div = $(".installments__wrapper");
+    let div = $(".modal__wrapper");
     if (!div.is(e.target) && div.has(e.target).length === 0) {
       $(".installments").fadeOut(400);
 

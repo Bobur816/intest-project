@@ -4,7 +4,7 @@
   height: fit-content;
   max-height: 81.4rem;
   border-radius: 0.6rem;
-  overflow-Y: scroll;
+  overflow-y: scroll;
 
   &::-webkit-scrollbar {
     display: none;
@@ -57,7 +57,7 @@
         @include center;
         gap: 0.4rem;
         color: #76788a;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 400;
         line-height: 1rem; /* 142.857% */
         letter-spacing: 0.0035rem;
@@ -104,5 +104,16 @@
         }
       }
     }
+  }
+}
+
+.mobile-filter__top {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }

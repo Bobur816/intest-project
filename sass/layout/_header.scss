@@ -30,6 +30,8 @@
 
   &__middle {
     background-color: var(--color-white);
+    position: relative;
+    z-index: 2;
     &__wrapper {
       height: 3.8rem;
       @include spaced;
@@ -60,7 +62,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background 0.3s;
+    transition: all 0.3s;
     &__wrapper {
       height: 2.55rem;
       color: var(--color-white);
@@ -111,6 +113,10 @@
     &-link {
       display: inline-block;
       padding: 0 0.5rem;
+
+      &.active {
+        color: var(--color-primary);
+      }
     }
   }
 
@@ -145,8 +151,6 @@
     }
   }
 
-
-
   &.header__scrolled {
     .header__top {
       &__wrapper {
@@ -169,6 +173,8 @@
     }
 
     .header__bottom {
+      box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+
       &__wrapper {
         height: 2rem;
       }
@@ -184,15 +190,10 @@
 
     &__middle {
       padding: 0.5rem 0;
-      // background-color: red;
+      box-shadow: 0 -50px 70px 10px var(--color-gray);
       &__wrapper {
         .logo {
           width: 5.1rem;
-          // background-color: yellow;
-
-          img {
-            // width: 100%;
-          }
         }
       }
 

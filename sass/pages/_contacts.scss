@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__card {
     background-color: var(--color-white);
@@ -62,6 +66,17 @@
 
     &:hover {
       transform: translateY(-0.2rem);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      height: fit-content;
     }
   }
 }

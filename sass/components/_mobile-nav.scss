@@ -55,13 +55,13 @@
   }
 
   .search__bar {
-    // background-color: yellow;
     padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr auto;
-    height: 2rem;
+    height: 2.4rem;
     input {
       width: 100%;
+      font-size: 0.8rem;
     }
   }
 
@@ -71,7 +71,6 @@
 
   &__links {
     padding: 1.5rem 1rem;
-    // background-color: red;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -97,7 +96,7 @@
 
     a {
       color: #58585a;
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
   }
 }

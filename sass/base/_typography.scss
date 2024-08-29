@@ -31,10 +31,13 @@
   position: relative;
 
   img {
+    // background-color: red;
     position: absolute;
     left: 0;
     @include absCenterY;
     height: 240%;
+    width: 45px;
+    object-fit: contain;
   }
 }
 

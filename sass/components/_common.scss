@@ -1,5 +1,9 @@
-.main {
+.main_home {
   margin-top: 8.5rem;
+}
+
+.main {
+  margin-top: 8.8rem;
 }
 
 .icon {
@@ -71,7 +75,7 @@
   }
 }
 
-.cards-show__more-btn{
+.cards-show__more-btn {
   height: 2.5rem;
   width: 9rem;
   font-size: 0.8rem;
@@ -79,7 +83,7 @@
   margin: 0 auto;
 }
 
-.show-more__wrapper{
+.show-more__wrapper {
   text-align: center;
   margin-top: 2.5rem;
   display: none;
@@ -117,12 +121,19 @@
   }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .main_home {
+    margin-top: 4.8rem;
+  }
   .main {
-    margin-top: 5rem;
+    margin-top: 4.8rem;
   }
 
-  .show-more__wrapper{
+  .section__bg {
+    max-width: 100%;
+  }
+
+  .show-more__wrapper {
     display: block;
   }
 }

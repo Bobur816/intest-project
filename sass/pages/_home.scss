@@ -1,5 +1,6 @@
 .head {
   position: relative;
+  height: fit-content;
 
   &__overlay {
     position: absolute;
@@ -15,12 +16,15 @@
   &__bg {
     @include fullImg;
     @include absCenter;
-    height: 33.5rem;
+    height: 100%;
 
-    &.about {
-      height: 30rem;
+    &__video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
+
   .swiper {
     position: absolute;
     top: 0;
@@ -155,12 +159,12 @@
     gap: 0.95rem;
     z-index: 2;
     position: relative;
-    
-    @media(max-width: 768px){
+
+    @media (max-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    @media(max-width: 500px){
+
+    @media (max-width: 500px) {
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -205,7 +209,7 @@
 .new-items {
   padding-top: 4rem;
 
-  &__wrapper{
+  &__wrapper {
     margin-top: 3rem;
   }
 }
@@ -213,7 +217,7 @@
 .popular-products {
   padding-top: 4.5rem;
 
-  &__wrapper{
+  &__wrapper {
     padding-top: 4rem;
   }
 }
@@ -434,7 +438,7 @@
     height: 25rem;
   }
 
-  .section__bg{
+  .section__bg {
     max-width: 40%;
   }
 }
@@ -442,6 +446,7 @@
 @media (max-width: 768px) {
   .head {
     position: relative;
+    height: fit-content;
 
     &__overlay {
       position: absolute;
@@ -460,7 +465,7 @@
       height: 33.5rem;
 
       &.about {
-        height: 30rem;
+        height: 100%;
       }
     }
     .swiper {
@@ -474,28 +479,31 @@
     }
 
     &__wrapper {
-      padding-top: 3rem;
-      color: var(--color-white);
-      width: 100%;
-      position: relative;
-      z-index: 2;
-      max-width: 47.3rem;
-      height: fit-content;
-      padding-bottom: 5rem;
-
       // background-color: red;
       h1 {
         font-size: 1.7rem;
         font-weight: 600;
       }
 
+      &.home-head {
+        padding-top: 3rem;
+        color: var(--color-white);
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        max-width: 47.3rem;
+        height: fit-content;
+        padding-bottom: 5rem;
+      }
+
       &.about {
         padding-top: 1rem;
         max-width: none;
-        height: 30rem;
+        height: 40rem;
         @include spaced;
-        flex-direction: column;
         align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 0;
 
         .location__box {
           color: var(--color-white);
@@ -616,7 +624,7 @@
       flex-direction: column;
       gap: 2rem;
     }
-  
+
     &__left {
       width: 100%;
       height: 26rem;
@@ -626,45 +634,44 @@
         object-fit: cover;
       }
     }
-  
+
     &__right {
       height: fit-content;
       width: 100%;
       gap: 1.5rem;
-  
+
       &-top {
         p {
           line-height: normal;
         }
       }
-  
+
       &-middle {
         width: 100%;
-  
+
         input {
           width: 100%;
         }
       }
-
     }
   }
 
   .services {
     margin-top: 3rem;
-  
+
     &__wrapper {
       margin-top: 4rem;
       height: fit-content;
       grid-template-columns: 1fr;
       gap: 1rem;
     }
-  
+
     &__item {
       height: 14rem;
-  
+
       &:nth-child(1) {
         grid-row: 1 / span 1;
-        grid-column: 1 /span 1;
+        grid-column: 1 / span 1;
         height: 30rem;
       }
 
@@ -685,12 +692,12 @@
       align-items: flex-start;
       gap: 4rem;
     }
-  
+
     &__wrapper {
       height: fit-content;
     }
 
-    .section__bg{
+    .section__bg {
       max-width: 70%;
     }
   }

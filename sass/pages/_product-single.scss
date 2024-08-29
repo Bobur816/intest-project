@@ -60,15 +60,34 @@
 
   &__addition {
     z-index: 2;
-    height: fit-content;
-    @include spaced;
-    flex-direction: column;
-    gap: 1.25rem;
+
+    & > h3 {
+      color: var(--color-primary);
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 1.1rem;
+    }
+
+    .carousel__addition {
+      display: none;
+      padding-bottom: 4.5rem;
+      overflow: visible;
+    }
+
+    &__cards {
+      height: fit-content;
+      @include spaced;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
 
     .card {
       width: 100%;
       height: 15.3rem;
-
+      box-shadow: 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04),
+        0px 20px 13px 0px rgba(0, 0, 0, 0.04),
+        0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
       &__info {
         p {
           font-size: 0.65rem;
@@ -172,7 +191,6 @@
   }
 
   &__more {
-    // background-color: red;
     &__1 {
       width: 32.5rem;
 
@@ -220,8 +238,6 @@
 
     &__body {
       margin-top: 2rem;
-
-      //   padding-left: 2rem;
       border: 2px solid #e8e8e8;
       position: relative;
       height: fit-content;
@@ -294,9 +310,11 @@
 
 .similar {
   margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  overflow-x: hidden;
+  overflow-y: visible;
 
   .swiper {
-    // background-color: yellow;
     &-wrapper {
       padding: 0 0 4rem 0;
     }
@@ -305,6 +323,138 @@
       box-shadow: 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.04),
         0px 20px 13px 0px rgba(0, 0, 0, 0.04),
         0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.02);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding-top: 2rem;
+    overflow: hidden;
+
+    .section__bg {
+      width: 100%;
+    }
+
+    &__wrapper {
+      grid-template-columns: 100%;
+      gap: 4rem;
+    }
+
+    &__common {
+      &__first {
+        grid-template-columns: 100%;
+        gap: 1.5rem;
+
+        &_left {
+          position: relative;
+          height: 100%;
+
+          .swiper {
+            height: 20rem;
+          }
+        }
+      }
+
+      &__second {
+        width: 100%;
+      }
+    }
+
+    &__addition {
+      & > h3 {
+        font-size: 0.8rem;
+      }
+
+      .carousel__addition {
+        display: block;
+      }
+
+      &__cards {
+        display: none;
+      }
+
+      .card {
+        width: 100%;
+        height: fit-content;
+      }
+    }
+
+    &__info {
+      &_name {
+        font-size: 1.05rem;
+      }
+
+      &_status {
+        font-size: 0.8rem;
+      }
+
+      &_model {
+        font-size: 0.9rem;
+      }
+
+      &_list {
+        li {
+          font-size: 0.8rem;
+          line-height: normal;
+        }
+      }
+
+      &__bottom {
+        .btn_primary {
+          width: 100%;
+        }
+
+        .btn-group {
+          height: 3rem;
+
+          button {
+            line-height: normal;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    &__more {
+      &__1 {
+        width: 100%;
+      }
+    }
+
+    &__more-info {
+      &__head {
+        height: 2.5rem;
+        width: 100%;
+        display: grid;
+
+        li {
+          button {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      &__body {
+        margin-top: 1rem;
+      }
+    }
+
+    &__info {
+      &__body {
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .similar {
+    margin-top: 2.5rem;
+
+    .swiper {
+      overflow: visible;
+      &-wrapper {
+        padding: 0 0 4rem 0;
+      }
     }
   }
 }

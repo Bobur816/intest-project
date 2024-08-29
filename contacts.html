@@ -23,61 +23,100 @@
   <body>
     <!-- quick buttons   -->
     <div class="quick-btns">
-      <button class="quick-btn">
+      <a href="basket.html" class="quick-btn">
         <span class="icon">
           <img src="img/icons/shopcart.svg" alt="quick-icon" />
         </span>
-      </button>
+      </a>
       <button class="quick-btn">
         <span class="icon">
           <img src="img/icons/phone-white.svg" alt="quick-icon" />
         </span>
       </button>
     </div>
+    
+    <!-- mobile nav  -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__top">
+        <a class="mobile-nav__logo" href="index.html">
+          <img src="img/logos/Logo.svg" alt="logo-mobile" />
+        </a>
+        <button class="mobile-nav__close">
+          <img src="img/icons/close-img.svg" alt="close-img" />
+        </button>
+      </div>
 
-    <!-- dealership  -->
-    <div class="dealership">
-      <div class="dealership__overlay">
-        <div class="dealership__wrapper">
-          <div class="dealership__wrapper-top">
-            <h3>Заявка на диллерство</h3>
-            <p>
-              Заполните форму ниже, станьте нашим диллером и получите ряд
-              преимуществ dsds
-            </p>
+      <div class="mobile-nav__main">
+        <div class="search__bar">
+          <input type="text" placeholder="Поиск по сайту" />
+          <button>
+            <img src="img/icons/search-icon.svg" alt="search-icon" />
+          </button>
+        </div>
+        <ul class="mobile-nav__links">
+          <li>
+            <a href="catalog-products.html">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="done-works.html">Работы</a>
+          </li>
+          <li>
+            <a href="#" class="active">Контакты</a>
+          </li>
+          <li>
+            <a href="about.html">О компании</a>
+          </li>
+        </ul>
+        <div class="mobile-nav__bottom">
+          <ul class="mobile-nav__categories">
+            <li>
+              <a href="#">Асфальт и битум</a>
+            </li>
+            <li>
+              <a href="#">Металл</a>
+            </li>
+            <li>
+              <a href="#">Бетон</a>
+            </li>
+            <li>
+              <a href="#">Грунт</a>
+            </li>
+            <li>
+              <a href="#">Цемент</a>
+            </li>
+            <li>
+              <a href="#">Общее оборудование</a>
+            </li>
+          </ul>
+          <div class="header__language">
+            <button>Eт</button>
+            <button>Ру</button>
+            <button>Uz</button>
           </div>
-          <form class="dealership__form">
-            <input
-              class="dealership__form-item"
-              type="text"
-              placeholder="Ваше имя*"
-            />
-            <input
-              class="dealership__form-item"
-              type="number"
-              placeholder="Ваш номер телефона*"
-            />
-            <input
-              class="dealership__form-item"
-              type="email"
-              placeholder="E-mail*"
-            />
-            <input
-              class="dealership__form-item"
-              type="text"
-              placeholder="Страна*"
-            />
-            <input
-              class="dealership__form-item"
-              type="text"
-              placeholder="Название компании*"
-            />
-            <textarea
-              class="dealership__form-item"
-              placeholder="Комментарий"
-            ></textarea>
-            <button class="btn_yellow">Отправить</button>
-          </form>
+          <div class="header__phones">
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-uzb.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-kz.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-ru.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/email.svg" alt="email-icon" />
+              info@in-test.uz
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -130,7 +169,7 @@
                   <a class="header__nav-link" href="done-works.html">Работы</a>
                 </li>
                 <li>
-                  <a class="header__nav-link" href="#">Контакты</a>
+                  <a class="header__nav-link active" href="contacts.html">Контакты</a>
                 </li>
                 <li>
                   <a class="header__nav-link" href="about.html">О компании</a>
@@ -151,6 +190,10 @@
               <button>
                 <img src="img/icons/search-icon.svg" alt="search-icon" />
               </button>
+              <button class="mobile-nav__open mobile-nav-toggler">
+                <img src="img/icons/hamburger.svg" alt="hamburger-icon" />
+              </button>
+              
             </div>
           </div>
         </div>
@@ -333,6 +376,7 @@
       </section>
     </main>
 
+    <!-- FOOTER  -->
     <footer class="footer contacts__footer">
       <div class="container">
         <div class="footer__bottom">

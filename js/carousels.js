@@ -126,16 +126,19 @@ $(window).on("load", () => {
     },
 
     breakpoints: {
-      "@0.00": {
+      0: {
         slidesPerView: 1,
       },
-      "@0.75": {
+      400: {
+        slidesPerView: 1.5,
+      },
+      500: {
         slidesPerView: 2,
       },
-      "@1.00": {
-        slidesPerView: 3,
+      700: {
+        slidesPerView: 4,
       },
-      "@1.50": {
+      800: {
         slidesPerView: 5,
       },
     },
@@ -162,17 +165,20 @@ $(window).on("load", () => {
     },
 
     breakpoints: {
-      "@0.00": {
+      0: {
         slidesPerView: 1,
       },
-      "@0.75": {
+      400: {
+        slidesPerView: 1.5,
+      },
+      500: {
         slidesPerView: 2,
       },
-      "@1.00": {
-        slidesPerView: 3,
-      },
-      "@1.50": {
+      700: {
         slidesPerView: 4,
+      },
+      800: {
+        slidesPerView: 5,
       },
     },
   });
@@ -200,6 +206,35 @@ $(window).on("load", () => {
       },
       "@1.50": {
         slidesPerView: 4,
+      },
+    },
+  });
+
+  const addition = new Swiper(".carousel__addition", {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: ".addition-next",
+      prevEl: ".addition-prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 1.5,
+      },
+      500: {
+        slidesPerView: 2,
+      },
+      700: {
+        slidesPerView: 4,
+      },
+      800: {
+        slidesPerView: 5,
       },
     },
   });

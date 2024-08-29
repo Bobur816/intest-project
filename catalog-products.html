@@ -23,11 +23,11 @@
   <body>
     <!-- quick buttons   -->
     <div class="quick-btns">
-      <button class="quick-btn">
+      <a href="basket.html" class="quick-btn">
         <span class="icon">
           <img src="img/icons/shopcart.svg" alt="quick-icon" />
         </span>
-      </button>
+      </a>
       <button class="quick-btn">
         <span class="icon">
           <img src="img/icons/phone-white.svg" alt="quick-icon" />
@@ -36,48 +36,443 @@
     </div>
 
     <!-- dealership  -->
-    <div class="dealership">
-      <div class="dealership__overlay">
-        <div class="dealership__wrapper">
-          <div class="dealership__wrapper-top">
+    <div class="modal">
+      <div class="modal__overlay">
+        <div class="modal__wrapper">
+          <div class="modal__wrapper-top">
             <h3>Заявка на диллерство</h3>
             <p>
               Заполните форму ниже, станьте нашим диллером и получите ряд
               преимуществ dsds
             </p>
           </div>
-          <form class="dealership__form">
+          <form class="modal__form">
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="text"
               placeholder="Ваше имя*"
             />
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="number"
               placeholder="Ваш номер телефона*"
             />
             <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="email"
               placeholder="E-mail*"
             />
+            <input class="modal__form-item" type="text" placeholder="Страна*" />
             <input
-              class="dealership__form-item"
-              type="text"
-              placeholder="Страна*"
-            />
-            <input
-              class="dealership__form-item"
+              class="modal__form-item"
               type="text"
               placeholder="Название компании*"
             />
             <textarea
-              class="dealership__form-item"
+              class="modal__form-item"
               placeholder="Комментарий"
             ></textarea>
             <button class="btn_yellow">Отправить</button>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav  -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__top">
+        <a class="mobile-nav__logo" href="index.html">
+          <img src="img/logos/Logo.svg" alt="logo-mobile" />
+        </a>
+        <button class="mobile-nav__close">
+          <img src="img/icons/close-img.svg" alt="close-img" />
+        </button>
+      </div>
+
+      <div class="mobile-nav__main">
+        <div class="search__bar">
+          <input type="text" placeholder="Поиск по сайту" />
+          <button>
+            <img src="img/icons/search-icon.svg" alt="search-icon" />
+          </button>
+        </div>
+        <ul class="mobile-nav__links">
+          <li>
+            <a href="#" class="active">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="done-works.html">Работы</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+          <li>
+            <a href="about.html">О компании</a>
+          </li>
+        </ul>
+        <div class="mobile-nav__bottom">
+          <ul class="mobile-nav__categories">
+            <li>
+              <a href="#">Асфальт и битум</a>
+            </li>
+            <li>
+              <a href="#">Металл</a>
+            </li>
+            <li>
+              <a href="#">Бетон</a>
+            </li>
+            <li>
+              <a href="#">Грунт</a>
+            </li>
+            <li>
+              <a href="#">Цемент</a>
+            </li>
+            <li>
+              <a href="#">Общее оборудование</a>
+            </li>
+          </ul>
+          <div class="header__language">
+            <button>Eт</button>
+            <button>Ру</button>
+            <button>Uz</button>
+          </div>
+          <div class="header__phones">
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-uzb.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-kz.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/phone-yellow.svg" alt="icon" />
+              <span>+99899 102 99 99</span>
+              <img src="img/icons/flag-ru.svg" alt="icon" />
+            </button>
+            <button class="button-with-img">
+              <img src="img/icons/email.svg" alt="email-icon" />
+              info@in-test.uz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile filter  -->
+    <div class="mobile-filter">
+      <div class="mobile-filter__wrapper">
+        <div class="mobile-filter__top">
+          <button class="mobile-filter__close">
+            <img src="img/icons/close-img.svg" alt="close-img" />
+          </button>
+          <h2>Фильтр</h2>
+        </div>
+        <div class="mobile-filter__main">
+          <div class="filter">
+            <h3 class="filter__title">Категории</h3>
+            <div class="filter__wrapper">
+              <div class="filter__item active">
+                <button class="filter__item__toggler">
+                  Асфальт и битум
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 4
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 5
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 6
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__item active">
+                <button class="filter__item__toggler">
+                  Бетон
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 4
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 5
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 6
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__item active">
+                <button class="filter__item__toggler">
+                  Цемент
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__item">
+                <button class="filter__item__toggler">
+                  Металл
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 4
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 5
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 6
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__item">
+                <button class="filter__item__toggler">
+                  Грунт
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 4
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 5
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 6
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter__item">
+                <button class="filter__item__toggler">
+                  Общее оборудование
+                  <img src="img/icons/chervon-down.svg" alt="chervon-icon" />
+                </button>
+                <div class="filter__item__body">
+                  <ul>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Все типы
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 1
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 2
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 3
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 4
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 5
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" />
+                        Подкатегория 6
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -118,7 +513,11 @@
               </button>
               <ul class="header__nav">
                 <li>
-                  <a class="header__nav-link" href="#">Каталог</a>
+                  <a
+                    class="header__nav-link active"
+                    href="catalog-products.html"
+                    >Каталог</a
+                  >
                 </li>
                 <li>
                   <a class="header__nav-link" href="#">Дилеры</a>
@@ -150,6 +549,9 @@
               <input type="text" placeholder="Поиск по сайту" />
               <button>
                 <img src="img/icons/search-icon.svg" alt="search-icon" />
+              </button>
+              <button class="mobile-nav__open mobile-nav-toggler">
+                <img src="img/icons/hamburger.svg" alt="hamburger-icon" />
               </button>
             </div>
           </div>
@@ -200,6 +602,10 @@
 
       <section class="catalog-products">
         <div class="container">
+          <button class="mobile-filter__open catalog-products__mobile-filter">
+            <img src="img/icons/filter-toggler.svg" alt="filter-toggler" />
+            Открыть фильтр
+          </button>
           <div class="catalog-products__wrapper">
             <div class="filter">
               <h3 class="filter__title">Категории</h3>
@@ -1736,6 +2142,7 @@
       </section>
     </main>
 
+    <!-- FOOTER   -->
     <footer class="footer">
       <div class="container">
         <h2 class="section__title">
