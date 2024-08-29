@@ -143,4 +143,9 @@ $(window).on("load", () => {
   $(".phone-format").inputmask({
     mask: "+998 (99) 999-99-99",
   });
+
+  new WOW({
+    offset: 50,
+    mobile: false,
+  }).init();
 });

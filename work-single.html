@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <link
@@ -260,7 +261,10 @@
         <div class="container">
           <div class="work-info__wrapper">
             <div class="work-info__part part_1">
-              <div class="work-info__part_left part__carousel">
+              <div
+                class="work-info__part_left part__carousel wow fadeInUp"
+                data-wow-delay=".2s"
+              >
                 <div class="swiper carousel__single-work">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -327,7 +331,10 @@
                   </button>
                 </div>
               </div>
-              <div class="work-info__part_right part__info">
+              <div
+                class="work-info__part_right part__info wow fadeInUp"
+                data-wow-delay=".3s"
+              >
                 <h3>Превосходство через качество</h3>
                 <p>
                   Получите полный набор преимуществ, выбирая нас: гарантия
@@ -348,7 +355,10 @@
               </div>
             </div>
             <div class="work-info__part part_2">
-              <div class="work-info__part_left part__info">
+              <div
+                class="work-info__part_left part__info wow fadeInUp"
+                data-wow-delay=".3s"
+              >
                 <h3>Превосходство через качество</h3>
                 <p>
                   Получите полный набор преимуществ, выбирая нас: гарантия
@@ -367,7 +377,10 @@
                   незабываемый опыт с нами!
                 </p>
               </div>
-              <div class="work-info__part_right part__video">
+              <div
+                class="work-info__part_right part__video wow fadeInUp"
+                data-wow-delay=".2s"
+              >
                 <iframe
                   width="560"
                   height="315"
@@ -391,12 +404,12 @@
 
       <section class="another-works">
         <div class="container">
-          <h2 class="section__title">
+          <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">
             <img src="img/icons/text-border.svg" alt="text-border" />
             Смотрите также наши другие работы
           </h2>
 
-          <div class="another-works__wrapper">
+          <div class="another-works__wrapper wow fadeInUp" data-wow-delay=".2s">
             <div class="swiper carousel__another-works">
               <div class="swiper-wrapper">
                 <div class="swiper-slide work-card">
@@ -626,6 +639,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="js/wow.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/carousels.js"></script>
